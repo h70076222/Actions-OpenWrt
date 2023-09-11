@@ -11,4 +11,7 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.5.1/g' package/base-files/files/bin/config_generate
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ
+sed -i "s/OpenWrt /xiaoma compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" $ZZZ
